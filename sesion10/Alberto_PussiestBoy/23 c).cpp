@@ -1,7 +1,7 @@
 /*
 Datos miembro privados
-Cambie ahora los datos miembro públicos y póngalos privados. Tendrá que añadir
-métodos para asignar y ver los valores de los datos miembro. Añada métodos
+Cambie ahora los datos miembro pÃºblicos y pÃ³ngalos privados. TendrÃ¡ que aÃ±adir
+mÃ©todos para asignar y ver los valores de los datos miembro. AÃ±ada mÃ©todos
 para asignar un valor a cada uno de los tres datos miembro. Modifique el main
 para tener en cuenta estos cambios.
 */
@@ -34,7 +34,36 @@ class Recta{
 		}	
 };
 
+
+class Coche_construction {     
+        public:          
+		//We will define 3 attributes
+		/*
+		brand: car brand construction
+		model: car model construction
+		year: first year when you bought the car
+		*/
+		string brand_construction;  
+		string model_construction; 
+		int year;      
+		Coche_construction(string x, string y, int z) { 
+			brand = x;
+		        model = y;
+		        year = z;
+		}
+};
+
+
 int main(){
+	
+	Coche_construction first_car("BMW", "Y6", 1998);
+	Coche_construction second_car("Ford", "Mustang", 1966);
+
+	// Print values
+	cout << first_car.brand_construction << " " << first_car.model_construction << " " << first_car.year << "\n";
+	cout << second_car.brand_construction << " " << second_car.model_construction << " " << second_car.year << "\n";
+	
+	/////////////////////////////////////////////
 	
 	Recta r1, r2;
 	
